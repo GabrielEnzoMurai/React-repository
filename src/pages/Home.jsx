@@ -1,11 +1,13 @@
-import Header from '../components/Header/Header.jsx'
+import Header from '../components/Header/Header'
+import Footer from '../components/Footer/Footer'
 
 function Home() {
     return (
         <>
             <Header />
             <h1>Home</h1>
-            <p>Subtitle</p>	
+            <p>Subtitle</p>
+            <Footer />
         </>
     )
 }
