@@ -1,7 +1,7 @@
 import Header from '../components/Header/Header'
 import Banner from '../components/Banner/Banner'
-import ProjectsList from '../components/ProjectsList/ProjectsList'
 import Footer from '../components/Footer/Footer'
+import ProjectsList from '../components/ProjectsList/ProjectsList'
 
 function Projects() {
     return (
