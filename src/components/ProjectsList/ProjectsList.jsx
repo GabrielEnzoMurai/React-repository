@@ -16,49 +16,49 @@ function ProjectsList(props) {
                     <div className='thumb tertiary-background'></div>
                     <h3>João Silva</h3>
                     <p>BH, Brasil</p>
-                    <img src={LikedFilled} />
+                    <img src={LikedFilled} height="20px" />
                 </div>
                 <div className='project-card d-flex jc-center al-center fd-column'>
                     <div className='thumb tertiary-background'></div>
                     <h3>João Silva</h3>
                     <p>BH, Brasil</p>
-                    <img src={LikedFilled} />
+                    <img src={LikedFilled} height="20px" />
                 </div>
                 <div className='project-card d-flex jc-center al-center fd-column'>
                     <div className='thumb tertiary-background'></div>
                     <h3>João Silva</h3>
                     <p>BH, Brasil</p>
-                    <img src={LikedFilled} />
+                    <img src={LikedFilled} height="20px" />
                 </div>
                 <div className='project-card d-flex jc-center al-center fd-column'>
                     <div className='thumb tertiary-background'></div>
                     <h3>João Silva</h3>
                     <p>BH, Brasil</p>
-                    <img src={LikedFilled} />
+                    <img src={LikedFilled} height="20px" />
                 </div>
                 <div className='project-card d-flex jc-center al-center fd-column'>
                     <div className='thumb tertiary-background'></div>
                     <h3>João Silva</h3>
                     <p>BH, Brasil</p>
-                    <img src={LikedFilled} />
+                    <img src={LikedFilled} height="20px" />
                 </div>
                 <div className='project-card d-flex jc-center al-center fd-column'>
                     <div className='thumb tertiary-background'></div>
                     <h3>João Silva</h3>
                     <p>BH, Brasil</p>
-                    <img src={LikedFilled} />
+                    <img src={LikedFilled} height="20px" />
                 </div>
                 <div className='project-card d-flex jc-center al-center fd-column'>
                     <div className='thumb tertiary-background'></div>
                     <h3>João Silva</h3>
                     <p>BH, Brasil</p>
-                    <img src={LikedFilled} />
+                    <img src={LikedFilled} height="20px" />
                 </div>
                 <div className='project-card d-flex jc-center al-center fd-column'>
                     <div className='thumb tertiary-background'></div>
                     <h3>João Silva</h3>
                     <p>BH, Brasil</p>
-                    <img src={LikedFilled} />
+                    <img src={LikedFilled} height="20px" />
                 </div>
             </div>
         </div>
