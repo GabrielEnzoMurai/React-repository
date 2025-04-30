@@ -8,8 +8,8 @@ import Like from '../../assets/like.svg'
 // UTILS
 import { getApiData } from '../../services/apiServices'
 
-function ProjectsList(props) {
-    const [projects, setProjects] = useState()
+function ProjectsList() {
+    const [projects, setProjects] = useState([])
 
     useEffect(() => {
         const fetchData = async () => {
