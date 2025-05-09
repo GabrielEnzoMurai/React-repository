@@ -1,8 +1,8 @@
+import { useContext } from 'react'
 import { Link  } from 'react-router-dom'
 
 // ASSETS
 import './Footer.css'
-
 import Logo from '../../assets/dnc-logo.svg'  
 import BrazilLogo from '../../assets/brazil-icon.svg' 
 import UsaLogo from '../../assets/usa-icon.svg'  
@@ -11,14 +11,22 @@ import TwitterLogo from '../../assets/twitter-icon.svg'
 import LinkedinLogo from '../../assets/linkedin-icon.svg' 
 import InstagramLogo from '../../assets/instagram-icon.svg' 
 
+// CONTEXT
+import { AppContext } from '../../contexts/AppContext'
+import Button from '../Button/Button'
+
 function Footer () {
+    const appContext = useContext(AppContext)
+    const changeLanguage = (country) => {
+        appContext.setLanguage(country)
+    }
     return(
         <footer>
             <div className="container">
                 <div className='d-flex jc-space-between mobile-fd-column'>
                     <div className='footer-logo-col'>
                         <img src={Logo} className='footer-logo'/>
-                        <p className='grey-1-color'>A escola que prepara você para as profissões em alta no mercado de trabalho.</p>
+                        <p className='grey-1-color'>{appContext.languages[appContext.language].general.footerLogoText}</p>
                         <div className='d-flex social-links'>
                             <a href="https://google.com" target="_blank">
                                 <img src={FacebookLogo} />
@@ -55,8 +63,12 @@ function Footer () {
                 <div className='d-flex jc-space-between footer-copy'>
                     <p className='grey-1-color'>Copyright © DNC - 2024</p>
                     <div className='langs-area d-flex'>
-                        <img src={BrazilLogo} height="29px" />
-                        <img src={UsaLogo} height="29px" />
+                        <Button buttonStyle="unstyled" onCLick={() => changeLanguage('br')}>
+                            <img src={BrazilLogo} height="29px" />
+                        </Button>
+                        <Button buttonStyle="unstyled" onCLick={() => changeLanguage('en')}>
+                            <img src={UsaLogo} height="29px" />
+                        </Button>
                     </div>
                 </div>
             </div>
