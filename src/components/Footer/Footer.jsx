@@ -44,12 +44,12 @@ function Footer () {
                     </div>
                     <div className='d-flex mobile-fd-column'>
                         <div className='footer-col'>
-                            <h3>Pages</h3>
+                            <h3>{appContext.languages[appContext.language].general.pages}</h3>
                             <ul>
-                                <li><Link to="/">Home</Link></li>
-                                <li><Link to="/about">About</Link></li>
-                                <li><Link to="/projects">Projects</Link></li>
-                                <li><Link to="/contact">Contact</Link></li>
+                                <li><Link to="/">{appContext.languages[appContext.language].menu.home}</Link></li>
+                                <li><Link to="/about">{appContext.languages[appContext.language].menu.about}</Link></li>
+                                <li><Link to="/projects">{appContext.languages[appContext.language].menu.projects}</Link></li>
+                                <li><Link to="/contact">{appContext.languages[appContext.language].menu.contact}</Link></li>
                             </ul>
                         </div>
                         <div className='footer-col'>
@@ -63,10 +63,10 @@ function Footer () {
                 <div className='d-flex jc-space-between footer-copy'>
                     <p className='grey-1-color'>Copyright © DNC - 2024</p>
                     <div className='langs-area d-flex'>
-                        <Button buttonStyle="unstyled" onCLick={() => changeLanguage('br')}>
+                        <Button buttonStyle="unstyled" onClick={() => changeLanguage('br')}>
                             <img src={BrazilLogo} height="29px" />
                         </Button>
-                        <Button buttonStyle="unstyled" onCLick={() => changeLanguage('en')}>
+                        <Button buttonStyle="unstyled" onClick={() => changeLanguage('en')}>
                             <img src={UsaLogo} height="29px" />
                         </Button>
                     </div>
