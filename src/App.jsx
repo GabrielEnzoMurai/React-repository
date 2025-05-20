@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 // Pages
 import Home from './pages/Home'
 import About from './pages/About'
+import LoadingSpinner from './components/LoadingSpinner/LoadingSpinner'
 import Projects from './pages/Projects'
 import Contact from './pages/Contact'
 
@@ -15,7 +16,7 @@ function App() {
   const appContext = useContext(AppContext)
 
   if (appContext.loading) {
-    return 'Loading...'
+    return <LoadingSpinner />
   }
 
   return (
