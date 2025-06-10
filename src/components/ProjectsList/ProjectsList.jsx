@@ -3,7 +3,7 @@ import './ProjectsList.css'
 
 //ASSETS
 import LikedFilled from '../../assets/like-filled.svg'
-import Like from '../../assets/like.svg'
+import LikeOutline from '../../assets/like.svg'
 
 // CONTEXT
 import { AppContext } from '../../contexts/AppContext'
